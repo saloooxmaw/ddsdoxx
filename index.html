@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <!--//Meta//-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"  aria-valuemax="" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta name="description" content="Boting">
+        <!--//Meta//-->
+        <!--link my wep-->
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="alternate" href="./xml/rss.xml" type="application/rss+xml" title="RSS">
+    <link rel="apple-touch-icon" href="./img/">
+    <link rel="shortcut icon" href="./img/icon.jpg" type="image/x-icon">
+    <link rel="manifest" href="./Json/manifest.json">
+    <link rel="stylesheet" href="./styles/screen.css">
+    <link rel="stylesheet" href="./styles/contact.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+       <!-- day-stylesheet -->
+    <link rel="stylesheet" href="./styles/style-day.css" id="day-stylesheet">
+    <!-- night-stylesheet-->
+    <link rel="stylesheet" href="./styles/style-night.css" id="night-stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/main.css">
+        <!--script my wep -->
+    <script src="https://kit.fontawesome.com/86a33ae1aa.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>  
+    <script type="text/javascript" src="https://smtpjs.com/v3/smtp.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+            <!--script End -->
+            
+    <title>Mohamed saloo</title>
+</head>
+<body>
+    <div class="inner-cursor"></div>
+    <div class="outer-cursor"></div>
+
+
+
+<section class="main">
+
+    <div class="info_me">
+        <span>hi i'm saloo</span>
+        <h2>A Passionate Developer</h2>
+        <p>Welcome to my personal website. Here, I share my thoughts, projects, and experiences in the world of technology and development. Feel free to explore and learn more about my journey!</p>
+        <a href="#contact" class="main-btn">Contact Me</a>
+        <div class="social-main">
+            <a href="#" title="instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" title="facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" title="github"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </div>
+
+    <div class="info-img">
+        <img src="./img/development.png" alt="development" class="img"width="75px" height="75px">
+        <img src="./img/coding.png" alt="coding" class="img" width="75px" height="75px">
+    </div>
+    
+</section>
+
+
+
+    <div class="angle-up" title="scroll to up">
+        <a href="#"><i class="fa-solid fa-angle-up"></i></a>
+    </div>
+
+ <!----------------^footer^------------------>
+
+
+
+    <footer class="footer">
+        <div class="footer-about">
+            <h2>Mohamed saloo</h2>
+            <p>Hi, I am Mohamed Saloo, a young programmer. I always strive to develop myself in this field 🖤</p>
+        </div>
+
+        <div class="tags">
+            <h2>Tags</h2>
+
+            <a href="#">Home</a>
+            <a href="../Pages/about.html">About</a>
+            <a href="../Pages/Project.html">Projacts</a>
+            <a href="../index.html#contact">Contact</a>
+
+        </div>
+            <div class="brands">
+                <h2>Contact</h2>
+                <a><i class="fa-solid fa-envelope"></i> mohamedsaloo147@gmail.com</a>
+                <a><i class="fa-brands fa-whatsapp"></i> +201147669117</a>
+                <!---->
+                <div class="social-footer" style="display: flex;">
+                    <a href="#" title="instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" title="facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" title="github"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+    </footer>
+
+    <footer class="footer1">
+        <p>All rights reserved to the site developer <span style="color: #000 ;">@Mohamed saloo</span></p>
+        <h1 class="time-wep" id="time"></h1>
+    </footer>
+
+<!--scripts-->
+
+<!----> <script type="text/javascript" src="./Script/nav-bar.js"></script>
+<!----> <script type="text/javascript" src="./Script/script.js"></script>
+<!----> <script type="text/javascript" src="./Script/send.js"></script>
+<!----> <script type="text/javascript" src="./Script/hove.js"></script>
+<!----> <script  type="text/javascript" src="./Script/main.js"></script>
+<!----> <script  type="text/javascript" src="./Script/scroll.js"></script>
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function() {
+    const scrollButton = document.querySelector('.scroll a');
+    const section = document.getElementById('contact');
+
+    scrollButton.addEventListener('click', function(e) {
+        e.preventDefault();
+        section.classList.add('active');
+        section.scrollIntoView({ behavior: 'smooth' });
+    });
+});
+
+</script>
+
+<!--scripts-->
+</body>
+</html>
