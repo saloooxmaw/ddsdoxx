@@ -112,6 +112,6 @@ setTimeout(() => {
   console.log("Client Login")
 }, 22 * 10000 * 60);
 
-client.login(config.token || process.env.token).catch((err) => {
+client.login(config.token).catch((err) => {
   console.log(err.message)
 })
